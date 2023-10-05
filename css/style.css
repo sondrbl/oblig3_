@@ -8,3 +8,14 @@ body{
     margin: 0;
     
 } 
+
+main section a {
+    background-color: #3E6FCE;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    size: 5000px;
+    
+}
