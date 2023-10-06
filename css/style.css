@@ -2,6 +2,7 @@
 html{
     background-color: blueviolet;
     font-size: calc(1em + 1vw);
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -9,13 +10,64 @@ body{
     
 } 
 
-main section a {
+header {
+    border: solid;
+    background-color: #D9D9D9;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    display: inline-block;
+    background-size: cover;
+}
+
+header nav span ul {
+    float: right;
+    text-align:right;
+ }
+
+main {
+    text-align: center;
+    
+}
+
+.gender-btn {
     background-color: #3E6FCE;
     color: #fff;
     display: inline-block;
-    padding: 1rem;
+    padding: 2rem;
     text-decoration: none;
     margin: 0.5rem;
-    size: 5000px;
-    
+    font-size: 25px;
+}
+
+.product-card {
+    border: solid;
+    background-color: #D9D9D9;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+
+/*#produkter {
+    border: solid;
+    background-color: #D9D9D9;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: flex;
+}*/
+
+@media only screen and (min-width: 600px) {
+
 }
