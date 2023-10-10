@@ -1,6 +1,16 @@
-*
+* {
+    box-sizing: border-box;
+}
+
+#logo{
+    font-size: 25px;
+    text-decoration: none;
+    color: white
+    
+}
+
 html{
-    background-color: blueviolet;
+    
     font-size: calc(1em + 1vw);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,6 +21,7 @@ body{
 } 
 
 header {
+    
     border: solid;
     background-color: #D9D9D9;
     padding: 15px 32px;
@@ -18,13 +29,25 @@ header {
     font-size: 16px;
     margin: 4px 4px;
     cursor: pointer;
-    display: inline-block;
     background-size: cover;
+    text-decoration: 0;
+    width: 100%;
 }
 
-header nav span ul {
-    float: right;
-    text-align:right;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+ }
+
+ div {
+  margin: 6px 0;
+  width: 30px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin:6px 0;
+  /*https://www.w3schools.com/howto/howto_css_menu_icon.asp link til hvordan
+  lage meny knapp*/
  }
 
 main {
@@ -43,6 +66,7 @@ main {
 }
 
 .product-card {
+    
     border: solid;
     background-color: #D9D9D9;
     padding: 15px 32px;
@@ -51,23 +75,6 @@ main {
     font-size: 16px;
     margin: 4px 4px;
     cursor: pointer;
-    display: inline-block;
+    display: inline-block; 
 }
 
-
-
-/*#produkter {
-    border: solid;
-    background-color: #D9D9D9;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    display: flex;
-}*/
-
-@media only screen and (min-width: 600px) {
-
-}
