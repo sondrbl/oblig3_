@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 
 #logo{
     font-size: 25px;
     text-decoration: none;
-    color: white
+    color: white;
+    padding: 0 5rem 0 0;
 }
 
 html{
@@ -103,13 +105,11 @@ main section a {
 
 .menupage {
     display: flex;
+    align-items: center;
     background-color: #3E6FCE;
     color:#fff;
-    width: 200px;
-    height: 200px;
     text-decoration: none;
     font-size: 40px;
-    padding-right: 1rem;
 }
 
 .menupage header {
@@ -118,25 +118,26 @@ main section a {
     border: 0;
     background-color: #3E6FCE;
     color: #fff;
-    margin: 0; 
-    padding: 0;
     font-size: 30px;
     text-align: center;
 }
 
 .menupage header nav {
     display: flex;
-    flex: vertical;
     width: 100%;
     justify-content: center;
     text-align: center;
     
 }
 
+.menupage main section {
+    display: flex;
+    justify-content: center;
+}
+
 .menupage main section li a{
     color: #fff;
     text-decoration: none;
-    
 }
 
 ul {
@@ -148,15 +149,19 @@ ul {
     text-align: center;
 }
 
-/*.fa-sharp .fa-solid .fa-bars{
-    justify-content: space-around;
-}*/
-
 #menyside.html {
     display: flex;
     padding-left: 5rem;
     font-weight: 900;
 }
+
+.product-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
 
 @media only screen and (min-width: 400px) {
     #grid-container {
