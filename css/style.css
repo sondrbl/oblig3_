@@ -3,17 +3,13 @@
     padding: 0;
 }
 
-#logo{
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-    padding: 0 5rem 0 0;
-}
+
 
 html{
-    /*font-size: calc(1em + 1vw);*/
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -31,32 +27,29 @@ body{
                         "footer";
 }
 
+
+/*Forside*/
 header {
-    grid-area: header header header;
+    grid-area: header;
     border: solid;
     background-color: #D9D9D9;
-    padding: 15px 32px;
+    padding: 1rem;
     text-decoration: none;
-    font-size: 16px;
-    margin: 4px 4px;
+    font-size: 1rem;
     background-size: cover;
     width: 100%;
     text-shadow: 1px 1px black;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
- }
 
- header nav a {
+
+
+
+#logo a{
+    font-size: 25px;
     text-decoration: none;
     color: white;
-    text-shadow: 1px 1px black;
- }
-
- 
+}
 
 main {
     grid-area: main;
@@ -88,6 +81,9 @@ main section a {
     justify-content: space-evenly;
 }
 
+
+/*Produktside*/
+
 .product-card {
     border: solid;
     background-color: #D9D9D9;
@@ -96,7 +92,6 @@ main section a {
     text-decoration: none;
     font-size: 16px;
     margin: 4px 4px;
-    cursor: pointer;
     display: inline-flex; 
     height: 150px;
     width: 150px;
@@ -109,13 +104,26 @@ main section a {
     width: 100%;
 }
 
-.filter-btn {
-    border: solid;
-    margin: 0 1rem 1rem;
-    background-color: #3E6FCE;
-    width: 30%;
+.product-header a {
+    color: white;
 }
 
+.filter-btn {
+    border: solid;
+    margin: 0 2rem 1rem;
+    background-color: #3E6FCE;
+    width: 40%;
+}
+
+.ul-sko li {
+    display: none;
+    border: solid;
+    background-color: #3E6FCE;
+    width: 25%;
+}
+
+
+/*Meny*/
 .menupage {
     display: flex;
     align-items: center;
@@ -123,6 +131,7 @@ main section a {
     color:#fff;
     text-decoration: none;
     font-size: 40px;
+    text-shadow: 1px 1px black;
 }
 
 #TILBAKE {
@@ -131,6 +140,7 @@ main section a {
     color: #fff;
     position: absolute;
     right: 5%;
+    font-size: 15px; 
 }
 
 .menupage header {
@@ -161,7 +171,7 @@ main section a {
     text-decoration: none;
 }
 
-ul {
+.menyelementer {
     text-decoration: none;
     list-style: none;
     
@@ -185,10 +195,37 @@ main section ul li {
 
 @media only screen and (min-width: 400px) {
     #grid-container {
-        grid-template-areas: "header header header" ". main ." "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3fr auto;
+        grid-template-areas:"header header header" 
+                            "main main main" 
+                            "footer footer footer";
         
 }
 
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
 
+header {
+    width: 100%
+}
+
+.filter-btn {
+    margin-left: 1rem;
+    width: 27%;
+}
+
+ .ul-sko li {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 1rem;
+    text-align: center;
+
+}
 
 }
