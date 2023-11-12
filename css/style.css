@@ -197,7 +197,7 @@ main section ul li {
 
 /*Analyse*/
 #analyse-main {
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 #tilbake-analyse {
@@ -210,17 +210,18 @@ main section ul li {
 }
 
 section img {
-    width: 30%;
-    height: 30%;
+    width: 80%;
+    height: 80%;
 }
 
 table, tr, td {
   border: 1px solid black;
   padding: 8px;
+  padding-top: 1rem;
 }
 
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 600px) {
     #grid-container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 3fr auto;
@@ -253,6 +254,11 @@ header {
     margin: 1rem 1rem;
     text-align: center;
 
+}
+
+.lighthouse-forside {
+    display: flex;
+    flex-direction: row;
 }
 
 }
